@@ -6,6 +6,9 @@ on:
       - master
   workflow_dispatch:
 
+env:
+  CI_CHUNK_SIZE: 65
+
 jobs:
   build:
     name: Build extensions
